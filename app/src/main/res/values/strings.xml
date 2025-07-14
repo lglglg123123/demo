@@ -1,0 +1,7 @@
+<resources>
+    <string name="home_title">首页</string>
+    <string name="categories_title">分类</string>
+    <string name="cart_title">购物车</string>
+    <string name="orders_title">订单</string>
+    <string name="app_name">Food Ordering System</string>
+</resources>

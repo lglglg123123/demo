@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/all_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:padding="8dp"
+                android:background="@drawable/category_bg_selected"/>
+
+            <TextView
+                android:id="@+id/fast_food_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快餐"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/category_bg"/>
+
+            <TextView
+                android:id="@+id/main_course_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主食"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/category_bg"/>
+
+            <TextView
+                android:id="@+id/healthy_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="健康餐"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/category_bg"/>
+
+            <TextView
+                android:id="@+id/japanese_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日式料理"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/category_bg"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foods_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
